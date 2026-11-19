@@ -126,7 +126,7 @@ p { margin: 0; }
 /* Albo */
 .albo { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; }
 .insediamento { margin: 0; background: var(--foglio); padding: 10px 10px 14px; box-shadow: 0 1px 0 var(--filo), 0 10px 22px rgba(31, 42, 68, 0.12); display: flex; flex-direction: column; gap: 10px; }
-.insediamento img { aspect-ratio: 3 / 4; object-fit: cover; width: 100%; background: var(--carta-2); }
+.insediamento img { aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 28%; width: 100%; height: auto; background: var(--carta-2); }
 .insediamento figcaption { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px 10px; align-items: baseline; }
 .insediamento .mandato { font-family: var(--f-titolo); font-size: 22px; color: var(--ceralacca); grid-row: span 2; }
 .insediamento .chi { font-weight: 800; font-size: 16px; }
