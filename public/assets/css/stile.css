@@ -43,7 +43,7 @@ p { margin: 0; }
   background: var(--inchiostro); color: var(--carta);
 }
 .indice .wrap { display: flex; align-items: center; gap: 20px; padding-block: 10px; }
-.indice .sigla { font-family: var(--f-titolo); font-size: 18px; color: var(--carta); text-decoration: none; white-space: nowrap; }
+.indice .sigla { font-family: var(--f-titolo); font-size: 18px; color: var(--carta); text-decoration: none; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
 .indice ol { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; }
 .indice ol::-webkit-scrollbar { display: none; }
 .indice li a {
@@ -76,7 +76,7 @@ p { margin: 0; }
 .contatore strong { font-family: var(--f-atto); font-size: 22px; color: var(--ceralacca); font-variant-numeric: tabular-nums; }
 
 .emblema-box { display: flex; flex-direction: column; align-items: center; gap: 18px; }
-.emblema-box svg { width: min(100%, 380px); height: auto; }
+.emblema-box img { width: min(100%, 380px); height: auto; }
 
 .comunicazione {
   margin-top: 40px; position: relative; max-width: 640px;
@@ -213,7 +213,7 @@ fieldset { border: 0; padding: 0; margin: 0; display: flex; flex-direction: colu
 /* Footer e cookie */
 footer { background: var(--inchiostro); color: var(--carta); padding-block: 44px 120px; font-size: 14px; }
 footer .wrap { display: flex; flex-direction: column; gap: 10px; }
-footer .sigla { font-family: var(--f-titolo); font-size: 26px; }
+footer .sigla { font-family: var(--f-titolo); font-size: 26px; display: flex; align-items: center; gap: 14px; }
 footer .righe { display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: var(--f-atto); color: #D8CCB4; }
 .cookie {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
@@ -232,7 +232,7 @@ footer .righe { display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: var(
 @media (max-width: 820px) {
   .portone .wrap, .colonne, .albo-testa, .spaccio, .ufficio { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .emblema-box { order: -1; }
-  .emblema-box svg { width: min(70%, 260px); }
+  .emblema-box img { width: min(60%, 230px); }
   .albo { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
   .articoli { grid-template-columns: minmax(0, 1fr); }
   .nota-numeri { grid-template-columns: minmax(0, 1fr); }

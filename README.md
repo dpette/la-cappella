@@ -13,6 +13,7 @@ public/assets/js/sito.js             figurine, galleria, modulo, contatore, cook
 public/assets/img/presidenti/        foto di insediamento (mandato-N.webp)
 public/assets/img/galleria/          foto della cappella (foto-NN.webp)
 public/assets/img/membri/            ritratti delle figurine
+public/assets/img/logo/              logo: a colori, monocromo scuro (fondi chiari), monocromo chiaro (fondi scuri)
 src/worker.js                        contatore delle candidature + servizio del sito
 wrangler.toml                        configurazione Cloudflare
 ```
