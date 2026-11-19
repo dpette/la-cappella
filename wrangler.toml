@@ -1,9 +1,15 @@
+# Il nome deve coincidere con quello del Worker creato su Cloudflare.
 name = "la-cappella"
-pages_build_output_dir = "."
+main = "src/worker.js"
 compatibility_date = "2026-11-01"
 
+# Sito statico: tutto ciò che sta in public/.
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
 # Archivio del contatore delle candidature.
-# Sostituire l'id con quello del namespace KV creato su Cloudflare (vedi README).
 [[kv_namespaces]]
 binding = "CANDIDATURE"
 id = "28a84919e5084a34838363d04e1f4d1a"
