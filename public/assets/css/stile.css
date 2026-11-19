@@ -117,7 +117,9 @@ p { margin: 0; }
 .figurina .numero { font-family: var(--f-titolo); font-size: 26px; color: var(--ceralacca); white-space: nowrap; }
 .figurina dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 2px 8px; font-size: 12.5px; line-height: 1.35; }
 .figurina dt { font-family: var(--f-atto); color: var(--inchiostro-2); }
-.figurina dd { margin: 0; font-weight: 600; }
+.figurina dd { margin: 0; font-weight: 600; min-width: 0; }
+.figurina .recapito { border-top: 1px dashed var(--filo); padding-top: 8px; font-family: var(--f-atto); font-weight: 700; font-size: 13px; color: var(--ceralacca); text-decoration: none; overflow-wrap: anywhere; }
+.figurina .recapito:hover { text-decoration: underline; }
 .nota-numeri { margin-top: 36px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: center; background: var(--inchiostro); color: var(--carta); padding: 24px 28px; }
 .nota-numeri h3 { font-family: var(--f-atto); font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--oro-chiaro); font-weight: 700; }
 .nota-numeri p { margin-top: 6px; max-width: 46em; }

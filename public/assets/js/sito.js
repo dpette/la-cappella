@@ -6,12 +6,13 @@
     stempiato: '<path d="M32 54 C34 40 42 34 48 34 C44 40 42 46 42 52 Z M90 54 C88 40 80 34 74 34 C78 40 80 46 80 52 Z M54 30 C58 26 66 26 70 30 C66 34 58 34 54 30 Z" fill="#6E1C2C"/>',
     rasato: '<path d="M38 36 C46 30 54 30 58 32" stroke="#F1E6D0" stroke-width="4" stroke-linecap="round" fill="none" opacity=".7"/>'
   };
+  var DOMINIO = ['lacappella', 'org'].join('.');
   var MEMBRI = [
-    { nome: 'Giovanni Bonesso', ammissione: '2016, fondatore', capelli: 'Folto', tipo: 'folto', presidenze: '2', foto: 'bonesso' },
-    { nome: 'Matteo Celin', ammissione: '2016, fondatore', capelli: 'Diradato', tipo: 'diradato', presidenze: '0', foto: 'celin' },
-    { nome: 'Daniel Pettenon', ammissione: '2017, ammissione tardiva', capelli: 'Stempiato', tipo: 'stempiato', presidenze: '3, in carica', foto: 'daniel' },
-    { nome: 'Matteo Scanferla', ammissione: '2016, fondatore', capelli: 'Stempiato', tipo: 'stempiato', presidenze: '0', foto: 'scanferla' },
-    { nome: 'Stefano Nosella', ammissione: '2016, fondatore', capelli: 'Rasato (non pelato)', tipo: 'rasato', presidenze: '1', foto: 'nosella' }
+    { nome: 'Giovanni Bonesso', ammissione: '2016, fondatore', capelli: 'Folto', tipo: 'folto', presidenze: '2', foto: 'bonesso', posta: 'gio' },
+    { nome: 'Matteo Celin', ammissione: '2016, fondatore', capelli: 'Diradato', tipo: 'diradato', presidenze: '0', foto: 'celin', posta: 'cel' },
+    { nome: 'Daniel Pettenon', ammissione: '2017, ammissione tardiva', capelli: 'Stempiato', tipo: 'stempiato', presidenze: '3, in carica', foto: 'daniel', posta: 'facc' },
+    { nome: 'Matteo Scanferla', ammissione: '2016, fondatore', capelli: 'Stempiato', tipo: 'stempiato', presidenze: '0', foto: 'scanferla', posta: 'scanf' },
+    { nome: 'Stefano Nosella', ammissione: '2016, fondatore', capelli: 'Rasato (non pelato)', tipo: 'rasato', presidenze: '1', foto: 'nosella', posta: 'nose' }
   ];
   function ritratto(tipo) {
     return '<svg viewBox="0 0 122 140" aria-hidden="true">' +
@@ -40,6 +41,7 @@
         '<dl><dt>Ammissione</dt><dd>' + m.ammissione + '</dd>' +
         '<dt>Capelli</dt><dd>' + m.capelli + '</dd>' +
         '<dt>Presidenze</dt><dd>' + m.presidenze + '</dd></dl>' +
+        '<a class="recapito" href="mailto:' + m.posta + '@' + DOMINIO + '">' + m.posta + '<wbr>@' + DOMINIO + '</a>' +
         '</article>';
     }).join('');
   }
