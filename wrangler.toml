@@ -1,0 +1,9 @@
+name = "la-cappella"
+pages_build_output_dir = "."
+compatibility_date = "2026-11-01"
+
+# Archivio del contatore delle candidature.
+# Sostituire l'id con quello del namespace KV creato su Cloudflare (vedi README).
+[[kv_namespaces]]
+binding = "CANDIDATURE"
+id = "INSERIRE_ID_NAMESPACE_KV"
