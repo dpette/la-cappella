@@ -170,7 +170,7 @@ dialog.visore .chiudi { position: fixed; top: calc(12px + env(safe-area-inset-to
 /* Spaccio */
 .spaccio { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 48px; align-items: center; }
 .natura-morta { background: var(--inchiostro); border-radius: 4px; overflow: hidden; }
-.natura-morta svg { width: 100%; height: auto; display: block; }
+.natura-morta img { width: 100%; height: auto; display: block; }
 .cartellino { display: inline-block; border: 2px dashed var(--ceralacca); color: var(--ceralacca); font-family: var(--f-atto); font-weight: 700; padding: 8px 14px; transform: rotate(-1.5deg); }
 .nota-piccola { font-size: 13px; color: var(--inchiostro-2); font-style: italic; }
 
