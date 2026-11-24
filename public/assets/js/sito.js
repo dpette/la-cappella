@@ -8,11 +8,11 @@
   };
   var DOMINIO = ['lacappella', 'org'].join('.');
   var MEMBRI = [
-    { nome: 'Giovanni Bonesso', ammissione: '2016, fondatore', capelli: 'Folto', tipo: 'folto', presidenze: '2', foto: 'bonesso', posta: 'gio },
-    { nome: 'Matteo Celin', ammissione: '2016, fondatore', capelli: 'Stempiato', tipo: 'stempiato', presidenze: '0', foto: 'celin', posta: 'cel },
-    { nome: 'Daniel Pettenon', ammissione: '2017, ammissione tardiva', capelli: 'Stempiato', tipo: 'stempiato', presidenze: '3, in carica', foto: 'daniel', posta: 'facc },
-    { nome: 'Matteo Scanferla', ammissione: '2016, fondatore', capelli: 'Stempiato', tipo: 'stempiato', presidenze: '0', foto: 'scanferla', posta: 'scanf },
-    { nome: 'Stefano Nosella', ammissione: '2016, fondatore', capelli: 'Rasato (non pelato)', tipo: 'rasato', presidenze: '1', foto: 'nosella', posta: 'nose }
+    { nome: 'Giovanni Bonesso', ammissione: '2016, fondatore', capelli: 'Folto', tipo: 'folto', presidenze: '2', foto: 'bonesso', posta: 'gio' },
+    { nome: 'Matteo Celin', ammissione: '2016, fondatore', capelli: 'Stempiato', tipo: 'stempiato', presidenze: '0', foto: 'celin', posta: 'cel' },
+    { nome: 'Daniel Pettenon', ammissione: '2017, ammissione tardiva', capelli: 'Stempiato', tipo: 'stempiato', presidenze: '3, in carica', foto: 'daniel', posta: 'facc' },
+    { nome: 'Matteo Scanferla', ammissione: '2016, fondatore', capelli: 'Stempiato', tipo: 'stempiato', presidenze: '0', foto: 'scanferla', posta: 'scanf' },
+    { nome: 'Stefano Nosella', ammissione: '2016, fondatore', capelli: 'Rasato (non pelato)', tipo: 'rasato', presidenze: '1', foto: 'nosella', posta: 'nose' }
   ];
   function ritratto(tipo) {
     return '<svg viewBox="0 0 122 140" aria-hidden="true">' +
